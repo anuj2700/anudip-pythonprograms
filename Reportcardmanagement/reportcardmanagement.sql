@@ -1,0 +1,3 @@
+create table studentdetails(stdid varchar(30) primary key,stdname varchar(300) not null,std varchar(30) not null,roll int not null);/
+
+create table reportcard(reportid varchar(30) primary key,stdid varchar(30) not null,session varchar(200) not null,examtype varchar(200) not null,hindi int not null,english int not null,maths int not null,science int not null,sst int not null,total int not null,percentage int not null,status varchar(30) not null, foreign key(stdid) references studentdetails(stdid));
